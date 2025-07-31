@@ -3,7 +3,7 @@
 
 **Challenge Description:** 
 
-Given a remote challenge endpoint, users need to solve the math equations as fast as they can to reveal the flag. Making an incorrect answer of not responding fast enough will lead to failing the challenge. 
+Given a remote challenge endpoint, users must solve math equations as fast as possible to reveal the flag. Providing an incorrect answer or failing to respond quickly enough will cause the challenge to fail.
 
 **TL;DR:** Solved a timed math challenge by automating responses using Python and `pwntools`. Used regex  to parse equations, computed results with conditionals, and looped until the flag was revealed: **CITU{0k_y0u_4r3_f4st_m4th_w1z4rd!}.**
 
@@ -11,9 +11,11 @@ Given a remote challenge endpoint, users need to solve the math equations as fas
 
 **1. How can I rapidly answer the equations?**
 
-A human being cannot answer math equations very fast, thus my approach is to create a program that would answer the math equations for me. 
+A human can't solve math equations quickly enough under time pressure, so I created a program to solve them for me.
 
-A day before answering this challenge, I faced an interesting problem while practicing in picoGym called **Easy Peasy**. I looked a [writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Easy_Peasy.md) for it and learned that you can break into remote servers and enables you to write scripts in it. It used the python library called `pwntools`. With that, I thought to myself that using **pwn** to connect to the remote challenge server, then add scripts that would answer the equations rapidly would work.
+A day before this challenge, I encountered a similar problem on picoGym called **Easy Peasy**. I looked a [writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Easy_Peasy.md) for it and learned that you can connect to remote servers and automate interactions using Python and a library called `pwntools`.
+
+With that, I thought to myself that using **pwn** to connect to the remote challenge server, then add scripts that would answer the equations rapidly would work.
 
 ```python
 from pwn import *
@@ -33,11 +35,11 @@ if match:
     a, op, b = match.groups()
     a, b = int(a), int(b)
 ```
-Alternatively, since the math equestions consists of `operand + ' ' + operation + ' ' + operand`, it is much easier to use  `split(' ')`
+Alternatively, since the math equestions consists of `operand + ' ' + operation + ' ' + operand`, it is much easier to use  `split(' ')`. I chose the former method.
 
 **3. How do I return the answer?**
 
-Since I now have the operands and the operators, I can now use if-elif statements to solve the equation and use `sendline()` to return the answer.
+Since I now have the operands and the operator, I can now use an if-elif statements to solve the equation and use `sendline()` to return the answer.
 ```python
 if op == '+':
 	answer = str(a + b)
@@ -62,7 +64,7 @@ log.info(f"Sent answer: {answer}")
 ```
 
 **4. Getting The Flag🚩**
-Now with those logic, I just need to loop the logic until I get the final answer. The flag is:
+Now with those logic, I just need to loop it until I get the flag. The flag is:
 > You are fast in math! Here is your flag: CITU{0k_y0u_4r3_f4st_m4th_w1z4rd!}
 
 ### Full Source Code
