@@ -35,4 +35,4 @@ Then we used this as the key for XORing the decoded base64 content. After applyi
 CITU{basic_crypto_as_it_is}
 ```
 
-[Home](../..)
+[**Back to Home**](/)

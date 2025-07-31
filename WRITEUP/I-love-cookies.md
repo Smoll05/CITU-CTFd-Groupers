@@ -33,4 +33,4 @@ document.cookie = `flag=${flag};`;
 
 This snippet from `script.js` confirmed how the flag got into the cookie. It converts character codes into the string `CITU{cookie_pasta}` and sets it as a browser cookie.
 
-[Home](../..)
+[**Back to Home**](/)
