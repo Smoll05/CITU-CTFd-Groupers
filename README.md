@@ -3,7 +3,7 @@
 - Gamay
 - GreyMatcha
 - MRhagz
-- Nano
+- Nova
 
 ### Writeups
 - [are-you-fast-in-math](/are-you-fast-in-math)
