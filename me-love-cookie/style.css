@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1; /* Light yellow background */
+}
+
+header {
+    background-color: #428bca; /* Blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #f5f5f5; /* Light gray background for sections */
+    padding: 20px;
+    border-radius: 5px; /* Add a slight rounded corner for sections */
+}
+
+.lyrics p {
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #ff9900; /* Orange color for highlighted words */
+    font-weight: bold;
+}

