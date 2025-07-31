@@ -1,1 +1,1 @@
-# CITU-CTFd-Groupers
+# CITU CTFd Writeups (Team: Groupers)
