@@ -24,7 +24,7 @@ Problem Solving
 
 Cryptography
 - [XIR-BUSICO](/WRITEUP/XIR-BUSICO.md)
-- [Fibonacci-as-an-encryptor](/WRITEUP/Fibonacci-as-an-encryptor.md.md)
+- [Fibonacci-as-an-encryptor](/WRITEUP/Fibonacci-as-an-encryptor.md)
 
 Binary Analysis
 - [Baby-Binary](/WRITEUP/Baby-Binary.md)
