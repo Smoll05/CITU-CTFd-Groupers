@@ -1,47 +1,48 @@
 # Katipwnan Buffer Bomber
 
-
 ## Problem
-``` py
-#!/usr/local/bin/python
+### chal.c contents:
+```C
+#include <stdio.h>
 
-import os
-import sys
-import string
+void get_flag() {
+    FILE *f = fopen("./flag.txt", "r");
+    char buf[200];
+    fgets(buf, 200, f);
+    printf("%s\n", buf);
+    fclose(f);
 
-print("="*40)
-print("Welcome to the prison break level 1")
-print("="*40)
-print("Warden: if any of you will try to escape, I will meet you in level 2 to level 3.")
-print("Warden: I will also make sure that you won't be able to escape since ret was trying to escape and was caught in level 2.")
-print("="*40)
-hax = input("> ")
-sys.stdin.close()
+    return;
+}
 
-confiscated_tools = ['os', 'import', 'flag', 'system']
+int main(void) {
+    setbuf(stdout, NULL);
 
-if len(hax) > 1024:
-    print("Few of ret tools was confiscated only, try to find the other tools.")
-    exit(1)
+    puts("Bomb is 64 in size and 'ret' is the ending command to fire, also this is not valorant...");
+    printf("Plant the spike: ");
+    char buf[64];
+    gets(buf);
 
-for tool in confiscated_tools:
-    if tool in hax:
-        print("Few of ret tools was confiscated only try to find the other tools.")
-        exit(1)
-
-code = f"""
-{hax}
-""".strip()
-
-os.execv(sys.executable, [sys.executable, "-c", code])
+    if (buf[64] == 'r' && buf[65] == 'e' && buf[66] == 't') {
+        printf("All right!\nHere is your flag: ");
+        get_flag();
+    } else {
+        printf("Try again!\n");
+    }
+    
+    return 0;
+}
 ```
-
 ## Solution
+The goal is to bypass the program by setting the values at the addresses after the bomb's location to ret. To do so, we need to fill the entire bomb, then the extra characters will the values set to the addresses after the bomb. So I inputed this in the program to get the flag:
 
-The program accepts a user input. At the last line, it executes the user's input as a python script. In the confiscated tools, I saw that "flag" has been taken away as well. This means that there exists a file called flag that can be accessed and stores the flag value. Since the word flag has been confiscated, I had to take a different approach so that it can't be read as flag. I came up with "fl" + "ag". So, I used the open method to open this file, read the file, and printed its contents like so:
-
-```py
-print(open("fl" + "ag.txt").read())
+```txt
+012345678901234567890123456789012345678901234567890123456789012ret
 ```
 
-I used this as the input and it showed the hidden flag.
+Which outputs:
+
+```txt
+All right!
+Here is your flag: CITU{k4tipwn4n_0v3rfl0w_b0mb_4ctiv4t3d_BO000000M!!}
+```
