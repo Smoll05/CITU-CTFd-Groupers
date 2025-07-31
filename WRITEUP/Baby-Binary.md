@@ -1,5 +1,5 @@
 
-## Challenge Name: baby-overflow
+## Challenge Name: Baby Binary
 **Category:** Binary
 **Points:** 200
 
