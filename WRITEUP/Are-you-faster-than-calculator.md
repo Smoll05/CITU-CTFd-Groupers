@@ -1,4 +1,4 @@
-## Challenge Name: Are You Fast In Math
+## Challenge Name: Are you faster than calculator?
 **Category:** Problem Solving
 
 **Challenge Description:** 

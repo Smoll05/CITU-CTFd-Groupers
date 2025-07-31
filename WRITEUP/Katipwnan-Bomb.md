@@ -1,4 +1,4 @@
-# Katipwnan Buffer Bomber
+# Katipwnan Bomb
 
 ## Problem
 ### chal.c contents:

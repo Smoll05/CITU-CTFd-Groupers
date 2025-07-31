@@ -1,4 +1,4 @@
-## Challenge Name: fibocrypt
+## Challenge Name: Fibonacci as an encryptor
 Category: Cryptography
 
 Challenge Description: 
