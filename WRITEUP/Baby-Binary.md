@@ -53,6 +53,6 @@ So I spammed random keys in my keyboard up to more than 16 characters. Upon pres
 This challenge reminded me how fragile memory handling in C can be. I thought I had a decent grasp of C, but this showed me how much more there is to learn — especially when it comes to low-level memory and security. Even a small oversight like using strcpy on a fixed-size buffer can lead to critical vulnerabilities.
 
 ---
-[Back to home](/)
+[**Back to Home**](/)
 
 

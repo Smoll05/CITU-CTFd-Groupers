@@ -276,4 +276,4 @@ This also made me realize that I still do not know C that much and why developer
 Also, most of the logic to find the answer of this CTF is through **AI**.
 
 ---
-[Back to home](/)
+[**Back to Home**](/)
