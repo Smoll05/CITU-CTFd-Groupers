@@ -13,6 +13,8 @@ An image of a cat in a green airplane is given. No text or obvious clue is visib
 
 We attempted to adjust the RGB values manually in GIMP, which began to reveal artifacts. However, for faster results, we used [aperisolve.fr](http://aperisolve.fr), an online OSINT tool that automates steganographic and metadata analysis.
 
+![Cat in green airplane](https://raw.githubusercontent.com/Smoll05/CITU-CTFd-Groupers/main/Writeup-Images/Cat-Green-Airplane.png)
+
 This revealed a hidden frame embedded within the image which contained the flag:
 
 ```

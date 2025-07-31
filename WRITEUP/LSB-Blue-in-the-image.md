@@ -20,6 +20,9 @@ we found a hidden message embedded in the LSB of the blue channel.
 
 **2. Alternatively, using online OSINT tools like [aperisolve.fr](http://aperisolve.fr)**
 
+![Aperi ZSteg](https://raw.githubusercontent.com/Smoll05/CITU-CTFd-Groupers/main/Writeup-Images/lsb-zsteg.png)
+
+
 A simpler approach was to upload the image to Aperisolve, which also runs LSB analysis. The flag was visible in the extracted text section.
 
 ```

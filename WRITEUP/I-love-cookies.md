@@ -14,6 +14,9 @@ The title and layout of the website features the Cookie Monster, giving us a big
 
 By opening the browser's developer tools and navigating to the **Storage > Cookies** section, we were able to directly see the flag stored in a cookie:
 
+![Cookie View](https://raw.githubusercontent.com/Smoll05/CITU-CTFd-Groupers/main/Writeup-Images/cookie-view.png)
+
+
 ```
 flag=CITU{cookie_pasta}
 ```

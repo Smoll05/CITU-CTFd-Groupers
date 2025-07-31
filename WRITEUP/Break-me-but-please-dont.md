@@ -35,6 +35,9 @@ So we tried appending:
 
 to the URL.
 
+![alert prompt](https://raw.githubusercontent.com/Smoll05/CITU-CTFd-Groupers/main/Writeup-Images/pop-weasel-prompt.png)
+
+
 **2. The output was garbled due to mixed character code formats**
 
 Although we got an alert popup, the flag appeared garbled. This was likely because `String.fromCharCode()` cannot correctly process hex strings (`"7b"`, `"6c"` etc.) directly mixed with decimal numbers.
