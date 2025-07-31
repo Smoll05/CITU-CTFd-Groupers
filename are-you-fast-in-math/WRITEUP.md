@@ -30,8 +30,8 @@ I used regex to take the operands and the operator, and since the questions are 
 ```python
 match = re.match(r"(\d+)\s*([+\-*/%^|])\s*(\d+)\s*=", question.strip())
 if match:
-            a, op, b = match.groups()
-            a, b = int(a), int(b)
+    a, op, b = match.groups()
+    a, b = int(a), int(b)
 ```
 Alternatively, since the math equestions consists of `operand + ' ' + operation + ' ' + operand`, it is much easier to use  `split(' ')`
 
